@@ -1,0 +1,120 @@
+main
+    img(class='main-title' src='assets/images/Delo.png' alt='Дело' width='261' height='118')
+    .field
+        label(class='field__question' for='1') Полное ФИО
+        input(class='field__answer' type='text' name='text-1' id='1' value='Пославский Михаил Николаевич')
+    .field
+        label(class='field__question' for='2') Год рождения
+        input(class='field__answer' type='text' name='text-2' id='2' value=1989)
+    .field
+        label(class='field__question' for='3') Место жительства
+        input(class='field__answer' type='text' name='text-3' id='3' value='г. Минск, Беларусь')
+    .field
+        label(class='field__question' for='4') Скайп
+        input(class='field__answer' type='text' name='text-4' id='4' value='mishapsv')
+    .field
+        label(class='field__question' for='5') Почта
+        input(class='field__answer' type='text' name='text-5' id='5' value='mishapsv@gmail.com')
+    .radiobox
+        p.radiobox__text Выпускник 
+            a(href='#') htmlacademy.ru
+        .radiobox__radio
+            input(type='radio' id='radio-yes' name='r1' checked)
+            label(for='radio-yes') Да
+            input(type='radio' id='radio-no' name='r2')
+            label(for='radio-no') Нет
+
+    h2.h2 Практические навыки
+    .note Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+    ul.checkbox
+        li.checkbox__item
+            input(id='checkbox-1' type='checkbox' checked)
+            label(for='checkbox-1') Методология БЭМ
+
+        li.checkbox__item
+            input(id='checkbox-2' type='checkbox' checked)
+            label(for='checkbox-2') jQuery
+
+        li.checkbox__item
+            input(id='checkbox-3' type='checkbox' checked)
+            label(for='checkbox-3') Использую Gulp
+
+        li.checkbox__item
+            input(id='checkbox-4' type='checkbox')
+            label(for='checkbox-4') HAML
+
+        li.checkbox__item
+            input(id='checkbox-5' type='checkbox')
+            label(for='checkbox-5') SASS
+
+        li.checkbox__item
+            input(id='checkbox-6' type='checkbox' checked)
+            label(for='checkbox-6') LESS
+
+        li.checkbox__item
+            input(id='checkbox-7' type='checkbox')
+            label(for='checkbox-7') CoffeeScript
+
+    ul.checkbox        
+        li.checkbox__item
+            input(id='checkbox-8' type='checkbox' checked)
+            label(for='checkbox-8') Jade
+
+        li.checkbox__item
+            input(id='checkbox-9' type='checkbox' checked)
+            label(for='checkbox-9') Stylus
+
+        li.checkbox__item
+            input(id='checkbox-10' type='checkbox')
+            label(for='checkbox-10') Знаю (изучаю) Angular
+
+        li.checkbox__item
+            input(id='checkbox-11' type='checkbox')
+            label(for='checkbox-11') Верстка под Android
+
+        li.checkbox__item
+            input(id='checkbox-12' type='checkbox')
+            label(for='checkbox-12') Верстка под iOS
+
+        li.checkbox__item
+            input(id='checkbox-13' type='checkbox')
+            label(for='checkbox-13') Верстка под Windows Phone
+
+    ul.checkbox.checkbox--with-left-padding
+        li.checkbox__item
+            input(id='checkbox-14' type='checkbox')
+            label(for='checkbox-14') Верстка рассылок
+
+        li.checkbox__item
+            input(id='checkbox-15' type='checkbox' checked)
+            label(for='checkbox-15') Адаптивная верстка
+
+        li.checkbox__item
+            input(id='checkbox-16' type='checkbox' checked)
+            label(for='checkbox-16') Использую Dropbox
+
+        li.checkbox__item
+            input(id='checkbox-17' type='checkbox' checked)
+            label(for='checkbox-17') Использую Gmail
+
+        li.checkbox__item
+            input(id='checkbox-17' type='checkbox' checked)
+            label(for='checkbox-17') Использую GitHub
+
+    h2.h2--left-padding Уровень владения JavaScript
+    ul.slider#slider
+        li.slider__thumb
+        li.slider__item#slider__item-1 Не владею
+        li.slider__item#slider__item-2 Использую готовые решения
+        li.slider__item#slider__item-3 Использую готовые решения и умею их переделывать
+        li.slider__item#slider__item-4 Пишу сложные скрипты
+        
+    .radiobox__radio.radiobox__radio--for-tablet
+            input(type='radio' id='radio-1' name='r3')
+            label(for='radio-1' checked) 
+            input(type='radio' id='radio-2' name='r4')
+            label(for='radio-2') 
+            input(type='radio' id='radio-3' name='r5' checked)
+            label(for='radio-3') 
+            input(type='radio' id='radio-4' name='r6')
+            label(for='radio-4') 

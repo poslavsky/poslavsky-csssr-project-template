@@ -1,0 +1,195 @@
+
+.main-title 
+    display block
+    text-align center
+    margin 12px auto 55px auto
+    padding-right 35px
+    
+    @media tablet
+        padding-right 0
+
+    
+.field 
+    width 100%
+    overflow hidden
+    min-height 62px
+    position relative
+    
+    @media mobile 
+        overflow hidden
+    
+    &:after 
+        @media tablet
+            position absolute
+            content ''
+            height 10px
+            bottom 0px
+            sprite $underline
+            //background-position 15px -107px
+            width 710px
+            left -15px
+        
+    &--short-date:after
+        display none
+        @media tablet
+            display block
+            padding-right 12px
+            padding-left 5px
+            width 195px
+            right -205px
+        
+    &__question 
+        display block
+        float left
+        position relative
+        padding-right 17px
+        line-height 60px
+        @media tablet
+            width 90%
+            line-height 30px
+            padding-top 20px
+        
+        &:after 
+            position absolute
+            content ''
+            height 10px
+            color red
+            bottom 14px
+            sprite $underline
+            background-position -99px -71px
+            width 710px    
+            right -702px
+            @media tablet
+                display none
+        
+        &--short-date:after
+            padding-right 12px
+            padding-left 5px
+            width 195px
+            right -205px
+            top 30px
+            @media tablet
+                display none
+    
+    &__answer 
+        display block
+        background none
+        border none
+        width 70%
+        font-size 30px
+        line-height 30px
+        font-weight 100
+        padding-left 13px
+        font-family "Courier New", sans-serif
+    
+        @media tablet
+            padding-left 10px   
+            line-height 44px
+            width 100%
+        
+
+.checkbox 
+    display inline-block
+    width 33%
+    font-size 0
+    padding 0
+    vertical-align top
+    margin-top 10px 
+    
+    @media tablet
+        width 100%
+        padding-left 20px
+        margin-top 0
+    
+    &--with-left-padding 
+        padding-left 20px
+        width 31%
+       
+    &__item 
+        list-style none
+        line-height 25px
+        padding-left 25px
+        font-size 21px
+        margin-top 10px
+     
+    &__item input[type=checkbox] + label 
+        position relative
+
+.radiobox
+    margin-bottom 20px
+    
+    &__text,
+    &__radio 
+        display inline-block
+        margin-top 17px
+        @media tablet
+            margin-top 0
+    
+    &__radio
+        padding-left 15px
+    
+    &__text a 
+        color #014f98
+    
+input[type=checkbox]
+input[type=radio] 
+    display none
+
+input[type=radio] + label::before 
+    display inline-block
+    width 24px
+    height 28px
+    margin -1px 4px 0 0
+    vertical-align -5px
+    background url(../images/radio.png) 104% 100% no-repeat 
+    cursor pointer
+    content "" 
+    padding-left 20px
+
+input[type=radio]:checked + label::before  
+    background url(../images/radio.png) -22% 100% no-repeat
+
+input[type=checkbox] + label::before 
+    position absolute
+    display inline-block
+    width 24px
+    height 28px
+    left -26px
+    top -4px
+    margin -1px 4px 0 0
+    vertical-align -2px
+    sprite $not-checked
+    cursor pointer
+    content "" 
+
+input[type=checkbox]:checked + label::before  
+    sprite $checked 
+
+.note 
+    position relative
+    font-size 14px
+    line-height 22px
+    font-weight normal
+    padding-left 17px
+    
+    &:before 
+        position absolute
+        content ''
+        width 11px
+        height 9px
+        left 0
+        top 6px
+        sprite $snowflake
+    
+    
+.h2 
+    line-height 47px
+    
+    &--left-padding
+        padding-left 10px
+        margin-top 65px
+        margin-bottom 7px
+        @media tablet
+            margin-top 30px
+        
+      
